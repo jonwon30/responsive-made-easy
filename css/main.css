@@ -18,7 +18,7 @@
 body {
   font-family: var(--ff-primary);
   font-weight: 400;
-  font-size: 1.3125rem;
+  font-size: 1rem;
   line-height: 1.6;
   background-image: url("abc");
 }
@@ -48,7 +48,7 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  max-width:100%;
 }
 
 .text-center {
@@ -68,7 +68,7 @@ section {
 
 .container {
   margin-inline: auto;
-  width: min(90%, 70.5rem);
+  width: min(70%, 70.5rem);
 }
 
 .split {
@@ -82,12 +82,17 @@ section {
   }
 
   .split > * {
-    flex-basis: 100%;
+    flex-basis: 90%;
   }
 
   .split > * + * {
     margin-left: 2em;
   }
+
+  body {
+    font-size: 1.3125rem;
+  }
+
 }
 
 .container--narrow {
